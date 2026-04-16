@@ -4,22 +4,25 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 40 30% 92%;
+    --background: 45 30% 96%;
+    --foreground: 100 20% 18%;
 
-    --gold: 42 78% 60%;
-    --gold-light: 42 80% 75%;
-    --surface: 220 18% 11%;
-    --surface-2: 220 16% 15%;
+    --beige: 42 38% 92%;
+    --beige-dark: 38 28% 84%;
+    --green-dark: 138 35% 18%;
+    --green-mid: 130 30% 32%;
+    --green-light: 120 25% 52%;
+    --surface: 45 25% 98%;
+    --surface-2: 44 20% 90%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 25% 98%;
+    --card-foreground: 100 20% 18%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 25% 98%;
+    --popover-foreground: 100 20% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 138 35% 18%;
+    --primary-foreground: 45 30% 96%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
