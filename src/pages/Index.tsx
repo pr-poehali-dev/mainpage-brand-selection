@@ -113,40 +113,45 @@ const Index = () => {
       </header>
 
       {/* ═══ ЗАГОЛОВОК РАЗДЕЛА ═══ */}
-      <section className="max-w-6xl mx-auto px-6 pt-8 pb-8">
+      <section className="max-w-6xl mx-auto px-6 pt-8 pb-6">
         {/* Метка раздела */}
-        <p className="text-xs text-gray-400 tracking-[0.3em] uppercase mb-4 flex items-center gap-2">
+        <p className="text-xs text-gray-400 tracking-[0.25em] uppercase mb-3 flex items-center gap-2">
           <span className="w-4 h-px bg-gray-300 inline-block" />
           История
         </p>
 
-        <div className="flex items-end justify-between gap-6">
-          <div className="relative">
-            {/* Фоновое крупное слово */}
-            <span
-              className="font-cormorant font-light select-none pointer-events-none block leading-none"
-              style={{
-                fontSize: "clamp(72px, 14vw, 140px)",
-                color: "#ede9e0",
-                letterSpacing: "-0.03em",
-                lineHeight: 1,
-              }}
-            >
-              Ключи
-            </span>
-            {/* Подпись поверх снизу */}
-            <p className="text-sm text-gray-400 mt-1 tracking-wide">
-              34 км к юго-востоку от Екатеринбурга, на левом притоке реки Исет
-            </p>
-          </div>
-
-          {/* Знак справа — естественно вписан */}
-          <img
-            src={EMBLEM_URL}
-            alt=""
-            className="hidden md:block flex-shrink-0 w-24 h-24 object-contain opacity-60 mb-6"
-          />
+        {/* Наложение: фоновое слово + поверх реальный заголовок */}
+        <div className="relative inline-block">
+          {/* Крупное декоративное слово позади */}
+          <span
+            className="font-cormorant font-light select-none pointer-events-none block leading-none"
+            style={{
+              fontSize: "clamp(80px, 18vw, 160px)",
+              color: "#ebe7de",
+              letterSpacing: "-0.02em",
+              lineHeight: 0.85,
+            }}
+          >
+            Ключи
+          </span>
+          {/* Настоящий заголовок — наложен поверх, смещён вниз */}
+          <h2
+            className="font-cormorant font-light leading-tight absolute left-0"
+            style={{
+              fontSize: "clamp(28px, 5vw, 44px)",
+              color: "#1a1a1a",
+              bottom: "-0.1em",
+              lineHeight: 1.15,
+            }}
+          >
+            Деревня<br />Ключи
+          </h2>
         </div>
+
+        {/* Географический подзаголовок */}
+        <p className="text-xs text-gray-400 leading-relaxed mt-8 max-w-xs">
+          34 км к юго-востоку от<br />Екатеринбурга, на левом притоке<br />реки Исет
+        </p>
       </section>
 
       {/* ═══ НОВОСТИ ═══ */}
