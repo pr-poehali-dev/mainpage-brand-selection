@@ -112,33 +112,39 @@ const Index = () => {
         </nav>
       </header>
 
-      {/* ═══ HERO — ЗАГОЛОВОК ═══ */}
-      <section className="max-w-6xl mx-auto px-6 pt-10 pb-6 grid md:grid-cols-3 gap-8">
-        <div className="md:col-span-2">
-          {/* Большой заголовок-название */}
-          <h2
-            className="font-cormorant text-8xl md:text-9xl font-light leading-none mb-3 select-none"
-            style={{ color: "#e8e5df", letterSpacing: "-0.02em" }}
-          >
-            Ключи
-          </h2>
-          <h3
-            className="font-cormorant text-4xl md:text-5xl font-light leading-tight mb-2"
-            style={{ color: "#2d4a2d" }}
-          >
-            Деревня<br />Ключи
-          </h3>
-          <p className="text-sm text-gray-400 tracking-wide">
-            Сысертского муниципального округа Свердловской области
-          </p>
-        </div>
+      {/* ═══ ЗАГОЛОВОК РАЗДЕЛА ═══ */}
+      <section className="max-w-6xl mx-auto px-6 pt-8 pb-8">
+        {/* Метка раздела */}
+        <p className="text-xs text-gray-400 tracking-[0.3em] uppercase mb-4 flex items-center gap-2">
+          <span className="w-4 h-px bg-gray-300 inline-block" />
+          История
+        </p>
 
-        {/* Боковая колонка — фирменный знак крупно */}
-        <div className="hidden md:flex items-center justify-center">
+        <div className="flex items-end justify-between gap-6">
+          <div className="relative">
+            {/* Фоновое крупное слово */}
+            <span
+              className="font-cormorant font-light select-none pointer-events-none block leading-none"
+              style={{
+                fontSize: "clamp(72px, 14vw, 140px)",
+                color: "#ede9e0",
+                letterSpacing: "-0.03em",
+                lineHeight: 1,
+              }}
+            >
+              Ключи
+            </span>
+            {/* Подпись поверх снизу */}
+            <p className="text-sm text-gray-400 mt-1 tracking-wide">
+              34 км к юго-востоку от Екатеринбурга, на левом притоке реки Исет
+            </p>
+          </div>
+
+          {/* Знак справа — естественно вписан */}
           <img
             src={EMBLEM_URL}
-            alt="Герб деревни Ключи"
-            className="w-36 h-36 object-contain opacity-80"
+            alt=""
+            className="hidden md:block flex-shrink-0 w-24 h-24 object-contain opacity-60 mb-6"
           />
         </div>
       </section>
